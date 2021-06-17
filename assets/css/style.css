@@ -1,0 +1,99 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+Estilos gerais presentes em todas as páginas
+*/
+
+.centralizar{
+    text-align: center;
+}
+
+/*Alinhar o menu em única linha*/
+#menu li{
+    display: inline;
+    padding: 15px;
+}
+
+/*Manter as palavras sempre em preto*/
+#menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/*Mudar a cor quando passar o mouse em cima*/
+#menu li a:hover{
+    color: blue;
+}
+
+/*
+Estilos de página index.html
+*/
+
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Configurar o texto*/
+.texto{
+    text-align: justify;
+    font-size: 18px;
+    padding: 30px;
+}
+
+/*Colocar margem abaixo de cada parágrafo*/
+.mb-20{
+    margin-bottom: 20px;
+}
+
+/*Arredondar imagem quadrada*/
+.br-50{
+    border-radius: 50%;
+}
+
+/*
+Estilos da página contato
+*/
+
+.display{
+    display: flex;
+    justify-content: center;
+}
+.logtm{
+    width: 100px;
+    padding: 15px;
+}
+#links{
+    padding: 30px;
+}
+/*Alinahr a página de contato*/
+.ctt{
+    align-content: center;
+}
+
+/*
+Estilos da página séries e música
+*/
+
+/*Display para as playlists e vídeos*/
+.midia{
+    display: flex;
+    justify-content: space-around;
+}
+/*Títulos*/
+.ttl{
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+/*Criar margem superior e inferior para o último bloco*/
+.end{
+    margin: 15px 0px 15px 0px;
+}

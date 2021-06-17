@@ -6,42 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <a href="index.html"> Home</a>
-      
-    <a href="contato.html"> Contato</a>
+<body style="background-color: plum">
+    <ul id="menu">
+        <li>
+            <a href="index.html"> Home</a>
+        </li>
+        <li>
+            <a href="seriesemusica.html"> Séries e Músicas</a>
+        </li>
+        <li>
+            <a href="contato.html"> Contato</a>
+        </li>
+    </ul>
 
-    <a href="seriesemusica.html"> Séries e Músicas</a>
+    <h1 class="centralizar">Entre em contato comigo</h1>
 
-    <h1>Entre em contato comigo</h1>
+        <div class="display">
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome">
+                <br>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email">
+                <br>
+                <br>
+                <label for="assunto">Assunto:</label><br>
+                <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
+                <br>
+                <br>
+                <button>Enviar</button>
+            </form>
+        </div>
+        
 
-    <form>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label><br>
-        <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
 
-    <p>
-        <h2>Se preferir, me chame nas redes sociais</h2>
+    <footer class="centralizar">
+        <h2>Se preferir, me chame nas redes sociais.</h2>
+        <div>
+            <a href="https://www.linkedin.com/in/elton-santos-07/">
+                <img class="logtm" src="./assets/logo/linkedin.png" alt="logo LinkedIn">
+            </a>
 
-        <ul>
-            <li><a href="https://www.linkedin.com/in/elton-santos-07/">Linkedin</a></li>
-            <li><a href="mailto:eltonsxxx@gmail.com">Gmail</a></li>
-            <li><a href="https://discord.com/channels/@tioelton#2137">Discord</a></li>
-        </ul>
-    </p>
+            <a href="mailto:eltonsxxx@gmail.com">
+                <img class="logtm" src="./assets/logo/gmail.png" alt="lo Gmail">
+            </a>
+
+            <a href="https://discord.com/channels/@tioelton#2137">
+                <img class="logtm" src="./assets/logo/discord.png" alt="logo Discord">
+            </a>
+        </div>
+    </footer>
+
 </body>
 
 </html>
