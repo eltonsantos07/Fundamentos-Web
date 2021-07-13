@@ -5,30 +5,72 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}
+
+.border{
+    padding: 15px;
+}
+
 /*
 Estilos gerais presentes em todas as páginas
 */
 
-.centralizar{
+/*Ajuste do menu*/
+#menu{
     text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: rgba(19, 17, 17, 0.767);
 }
 
-/*Alinhar o menu em única linha*/
+/*Alinhar os links do menu em única linha*/
 #menu li{
     display: inline;
-    padding: 15px;
+    padding: 30px;
 }
 
-/*Manter as palavras sempre em preto*/
+/*Manter as palavras sempre em preto, mesmo após clicar nelas, evitando mudança de cor após acessar os links*/
 #menu li a{
     text-decoration: none;
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif
 }
 
 /*Mudar a cor quando passar o mouse em cima*/
 #menu li a:hover{
-    color: blue;
+    color: gray
+}
+
+/*Ajustar o rodapé*/
+.rodape{
+    text-align: center;
+    padding: 10px;
+}
+
+/*Alinhar os itens do rodapé*/
+.rodape li{
+    display: inline-flex;
+}
+
+.rodape p{
+    margin-top: 15px;
+}
+
+.rodape li a img{
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*Títulos*/
+.title{
+    text-align: center;
+    font-style: oblique;
 }
 
 /*
@@ -45,7 +87,7 @@ Estilos de página index.html
 /*Configurar o texto*/
 .texto{
     text-align: justify;
-    font-size: 18px;
+    /*font-size: 18px;*/
     padding: 30px;
 }
 
@@ -86,7 +128,7 @@ Estilos da página séries e música
 /*Display para as playlists e vídeos*/
 .midia{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 /*Títulos*/
 .ttl{

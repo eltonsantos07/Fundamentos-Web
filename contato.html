@@ -10,56 +10,89 @@
 </head>
 
 <body style="background-color: plum">
-    <ul id="menu">
-        <li>
-            <a href="index.html"> Home</a>
-        </li>
-        <li>
-            <a href="seriesemusica.html"> Séries e Músicas</a>
-        </li>
-        <li>
-            <a href="contato.html"> Contato</a>
-        </li>
-    </ul>
+    <div>
+        <ul id="menu">
+            <li>
+                <a href="index.html"> <img src="./assets/logo/casa.png" alt="Logo Homepage" width="20px"> Home</a>
+            </li>
+            <li>
+                <a href="seriesemusica.html"> Séries e Músicas</a>
+            </li>
+            <li>
+                <a href="contato.html"> <img src="./assets/logo/telefone.png" alt="Logo de contato" width="20px">
+                    Contato</a>
+            </li>
+            <li>
+                <a href="musica.html"> Músicas</a>
+            </li>
+        </ul>
+    </div>
 
-    <h1 class="centralizar">Entre em contato comigo</h1>
+    <div>
 
-        <div class="display">
+    </div>
+    
+    <div class="title">
+        <h1 class="centralizar">Entre em contato comigo</h1>
+    </div>
+
+    <div>
+        <div>
             <form>
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"> </div>
                 <br>
                 <label for="email">Email:</label><br>
-                <input type="email" id="email">
-                <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"> </div>
                 <br>
                 <label for="assunto">Assunto:</label><br>
-                <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
+                <textarea name="assunto" id="assunto" cols="60" rows="10" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"> </div>
                 <br>
-                <br>
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
             </form>
+
+            <p> Parque Ibirapuera</p>
+            <p> São Paulo - SP</p>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14625.921732098925!2d-46.6667791280179!3d-23.587096889667134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1a91c26a3%3A0x5fd57fbcb6222e5a!2sParque%20Ibirapuera%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1624034947909!5m2!1spt-BR!2sbr"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" id='mapa'
+                onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
         </div>
-        
 
-
-    <footer class="centralizar">
-        <h2>Se preferir, me chame nas redes sociais.</h2>
         <div>
-            <a href="https://www.linkedin.com/in/elton-santos-07/">
-                <img class="logtm" src="./assets/logo/linkedin.png" alt="logo LinkedIn">
-            </a>
-
-            <a href="mailto:eltonsxxx@gmail.com">
-                <img class="logtm" src="./assets/logo/gmail.png" alt="lo Gmail">
-            </a>
-
-            <a href="https://discord.com/channels/@tioelton#2137">
-                <img class="logtm" src="./assets/logo/discord.png" alt="logo Discord">
-            </a>
+            <img src="" alt="">
         </div>
-    </footer>
+    </div>
+
+
+
+    <hr>
+        <footer class="rodape">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/elton-santos-07/">
+                        <img src="./assets/logo/linkedin.png" alt="logo LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:eltonsxxx@gmail.com">
+                        <img src="./assets/logo/gmail.png" alt="lo Gmail">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://discord.com/channels/@tioelton#2137">
+                        <img src="./assets/logo/discord.png" alt="logo Discord">
+                    </a>
+                </li>
+            </ul>
+            <p>Todos os direitos reservados: Elton Santos &copy;</p>
+        </footer>
+
+    <script src="./assets/js/script.js"></script>
 
 </body>
 
